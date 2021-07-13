@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+<script>
+function sendemail()
+{
+    var body ="Shri Narendra Modi Ji," + "\n";
+    body += "Prime Minister of India" + "\n" + "\n";
+    body += "I am deeply troubled by the rising incidences of cruelty to animals in India, each more shocking than the last. Tens of lakhs of animals have become victims of heinous crimes committed by humans. Dogs are poisoned, brutally attacked, hacked to death, cows suffering acid attacks, and countless other animals across the country are abused daily.  Yet people convicted of such crimes often only pay a paltry Rs 50 fine – the maximum penalty for a first offence of animal abuse under The Prevention of Cruelty to Animals Act, 1960. Please help prevent violence against animals by strengthening India's animal protection laws and penalties for abusers. I respectfully ask that you show that cruelty to animals wont be tolerated by ensuring that heinous crimes of brutal torture or killing of animals be made a non-bailable offence and persons found guilty of it receive significant jail time, exemplary fines, and counselling and are forbidden to have contact with animals." + "\n" +"\n";
+    body += "I also urge you to ensure that the proposed amendment to the Prevention of Cruelty to Animals Act 1960, after taking into account suggestions sent by NGOs and activists, be introduced and passed in this monsoon session of Parliament beginning 19 July 2021. Thank you for your attention to this important matter." + "\n" +"\n";
+    body += "Yours sincerely," + "\n";
+    body +=  document.getElementById("name").value + "\n";
+    body +=  document.getElementById("contact").value + "\n";
+    body += document.getElementById("city").value;
+
+    var subject = "URGENT ACTION REQUIRED - Amendment of PCA Act, 1960";
+    var address = "test1@gmail.com";
+    var cc_address = "test2@gmail.com,test3@gmail.com";
+    var bcc_address = "test4@gmail.com";
+
+    var location = "mailto:" + address + "?" + "cc=" + cc_address + "&bcc=" + bcc_address + "&subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    
+    window.location.href = location;
+}
+</script>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="formstylesheet.css">
+<script src="script.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petition To increase the penalty for animal cruelty. | Take Action Now!</title>
+<meta name="description" content="Petition To increase the penalty for animal cruelty. | Take Action Now!">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+<script src="script.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M0N4D4P4CX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M0N4D4P4CX');
+</script>
+    
+    
+</head>
+<body>
+    
+    
+    
+    
+<!---- Try This ---->
+    
+<div class="content">
+  <div class="col-1">
+    <!-- Card example 01 -->
+    <div class="card">
+      <div class="optional-header">
+        <div class="primary-title">
+          <div class="title">Take Action Now!</div>
+          <div class="subhead">Petition To Ammend PCA Act,1960</div>
+        </div>
+      </div>
+      <div class="media media--16-9"> <img src="nomore50.png" alt="Petition To Ammend PCA Act,1960" width="640" height="426"> </div>
+      <div class="primary-title">
+        <div class="primary-text"><b>Increase The Penalty For <br>Animal Cruelty</b></div>
+        <!-- <div class="secondary-text">Petition: To The administrator, Chandigarh UT</div> -->
+      </div>
+      <div class="supporting-text">To The Prime Minister of India, I am troubled by the rising animal cruelty cases in India. Even 60 years later, the penalty for animal cruelty still stands to a meagre amount of Rs. 50 with no imprisonment..</div>
+     <!-- <div class="actions">
+        <div class="action-buttons"> -->
+ 
+<!---- Try This ---->
+
+<div class="form">
+<form action="javascript: sendemail()">
+<br>
+
+Your Full Name:<br>
+<input id="name" type="text" name="name" required>
+<br>
+    
+Contact Number:<br>
+<input id="contact" type="number" name="contact" placeholder="Optional">
+<br>    
+    
+City:<br>
+<input id="city" type="text" name="city" required>
+<br>
+<button class="button" type="submit" value="Submit">SUBMIT</button>
+    
+                <div id="share" class="action-icons float-right">Share on: 
+        <!-- Inline Share buttons Addthis -->
+                <div class="addthis_inline_share_toolbox"></div>
+</form><br>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f5dd9655bda9da4"></script>
+
+</body>
+</html>
+
