@@ -3,20 +3,31 @@
 <script>
 function sendemail()
 {
-    var body ="Shri Narendra Modi Ji," + "\n";
-    body += "Prime Minister of India" + "\n" + "\n";
-    body += "I am deeply troubled by the rising incidences of cruelty to animals in India, each more shocking than the last. Tens of lakhs of animals have become victims of heinous crimes committed by humans. Dogs are poisoned, brutally attacked, hacked to death, cows suffering acid attacks, and countless other animals across the country are abused daily.  Yet people convicted of such crimes often only pay a paltry Rs 50 fine – the maximum penalty for a first offence of animal abuse under The Prevention of Cruelty to Animals Act, 1960. Please help prevent violence against animals by strengthening India's animal protection laws and penalties for abusers. I respectfully ask that you show that cruelty to animals wont be tolerated by ensuring that heinous crimes of brutal torture or killing of animals be made a non-bailable offence and persons found guilty of it receive significant jail time, exemplary fines, and counselling and are forbidden to have contact with animals." + "\n" +"\n";
-    body += "I also urge you to ensure that the proposed amendment to the Prevention of Cruelty to Animals Act 1960, after taking into account suggestions sent by NGOs and activists, be introduced and passed in this monsoon session of Parliament beginning 19 July 2021. Thank you for your attention to this important matter." + "\n" +"\n";
-    body += "Yours sincerely," + "\n";
-    body +=  document.getElementById("name").value + "\n";
-    body +=  document.getElementById("contact").value + "\n";
+    let body_variations = ["message 1\n", 
+                           "message 2\n", 
+                           "message 3\n", 
+                           "message 4\n", 
+                           "message 5\n", 
+                           "message 6\n",
+                           "message 7\n"];
+    let body = body_variations[Math.floor(Math.random() * body_variations.length)];
+    body += document.getElementById("name").value + "\n";
+    body += document.getElementById("contact").value + "\n";
     body += document.getElementById("city").value;
-
-    var subject = "URGENT ACTION REQUIRED - Amendment of PCA Act, 1960";
+    
+    
+    subject_variations = ["subject 1",
+                          "subject 2",
+                          "subject 3",
+                          "subject 4",
+                          "subject 5",
+                          "subject 6",
+                          "subject 7"];
+    var subject = subject_variations[Math.floor(Math.random() * subject_variations.length)];
     var address = "test1@gmail.com";
     var cc_address = "test2@gmail.com,test3@gmail.com";
     var bcc_address = "test4@gmail.com";
-
+ 
     var location = "mailto:" + address + "?" + "cc=" + cc_address + "&bcc=" + bcc_address + "&subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     
     window.location.href = location;
