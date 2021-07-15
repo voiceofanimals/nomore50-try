@@ -571,4 +571,36 @@ button {
 	padding: 0 8px;
 	text-align: center;
 	text-transform: uppercase;
-
+	
+	}
+.primary-text-tweet {
+	font-size: 24px;
+}
+.primary-text-tweet + .secondary-text-tweet, .secondary-text-tweet + .primary-text-tweet, .optional-header + .primary-text-tweet {
+	margin-top: calc(24px/2/2); /* margin-top is 50% of the primary title font size. */
+}
+.primary-title-tweet {
+	padding: 24px 16px 16px;
+}
+.primary-title-tweet + .supporting-text-tweet, .optional-header + .supporting-text-tweet {
+	padding-top: 0;
+}
+.primary-title-tweet .optional-header-tweet {
+	padding-left: 0;
+	padding-right: 0;
+}
+.secondary-text-tweet .action-icon {
+	font-size: inherit;
+	margin: 0;
+	padding: 0;
+}
+.subhead, .secondary-text-tweet {
+	color: rgba(0,0,0,.54);
+	font-size: 14px;
+}
+.supporting-text-tweet {
+	font-size: 13px;
+	line-height: 1.5;
+	padding: 16px;
+	padding-bottom:0px;
+}
