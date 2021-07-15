@@ -576,19 +576,12 @@ button {
 .primary-text-tweet {
 	font-size: 24px;
 }
-.primary-text-tweet + .secondary-text-tweet, .secondary-text-tweet + .primary-text-tweet, .optional-header + .primary-text-tweet {
-	margin-top: calc(24px/2/2); /* margin-top is 50% of the primary title font size. */
-}
+
 .primary-title-tweet {
 	padding: 24px 16px 16px;
 }
-.primary-title-tweet + .supporting-text-tweet, .optional-header + .supporting-text-tweet {
-	padding-top: 0;
-}
-.primary-title-tweet .optional-header-tweet {
-	padding-left: 0;
-	padding-right: 0;
-}
+
+
 .secondary-text-tweet .action-icon {
 	font-size: inherit;
 	margin: 0;
