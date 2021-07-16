@@ -598,3 +598,10 @@ button {
 	padding: 16px;
 	padding-bottom:0px;
 }
+	
+	.header-tweet {
+	background: white;
+    	height: 50px;
+    	border-radius: 0 0 15px 15px;
+    	width: 100%;
+	}
